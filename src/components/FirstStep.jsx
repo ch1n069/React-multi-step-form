@@ -27,6 +27,10 @@ const FirstStep = () => {
           label="Second Name"
           variant="outlined"
           color="secondary"
+          onChange={(e) =>
+            setUserData({ ...userData, secondName: e.target.value })
+          }
+          value={userData["secondName"]}
         />
       </div>
       <div>
@@ -35,6 +39,11 @@ const FirstStep = () => {
           label="Contact info"
           variant="outlined"
           color="secondary"
+          type="phone"
+          value={userData["contact"]}
+          onChange={(e) =>
+            setUserData({ ...userData, contact: e.target.value })
+          }
         />
       </div>
       <Button variant="contained" color="secondary" onClick={submitData}>
