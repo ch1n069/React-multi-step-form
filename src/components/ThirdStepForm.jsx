@@ -6,7 +6,7 @@ const ThirdStepForm = () => {
       <div>
         <TextField
           margin="normal"
-          label="First Name"
+          label="County"
           variant="outlined"
           color="secondary"
         />
@@ -15,7 +15,7 @@ const ThirdStepForm = () => {
       <div>
         <TextField
           margin="normal"
-          label="Second Name"
+          label="Landmark"
           variant="outlined"
           color="secondary"
         />
@@ -23,7 +23,7 @@ const ThirdStepForm = () => {
       <div>
         <TextField
           margin="normal"
-          label="Contact info"
+          label="Postal Code"
           variant="outlined"
           color="secondary"
         />

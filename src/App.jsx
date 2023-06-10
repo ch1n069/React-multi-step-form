@@ -9,6 +9,20 @@ import { Stepper, StepLabel, Step } from "@mui/material";
 function App() {
   const [count, setCount] = useState(0);
 
+  // function to conditionally render the steps form
+  const showStep = (step) => {
+    switch (step) {
+      case 1:
+        return <FirstStep />;
+      case 2:
+        return <SecondStepForm />;
+      case 3:
+        return <ThirdStepForm />;
+
+      default:
+        break;
+    }
+  };
   return (
     <>
       <div className="App" style={{}}>
@@ -27,9 +41,7 @@ function App() {
             <StepLabel></StepLabel>
           </Step>
         </Stepper>
-        <FirstStep />
-        <SecondStepForm />
-        <ThirdStepForm />
+        {showStep(1)}
       </div>
     </>
   );

@@ -6,7 +6,7 @@ const SecondStepForm = () => {
       <div>
         <TextField
           margin="normal"
-          label="First Name"
+          label="Email"
           variant="outlined"
           color="secondary"
         />
@@ -15,7 +15,7 @@ const SecondStepForm = () => {
       <div>
         <TextField
           margin="normal"
-          label="Second Name"
+          label="Country"
           variant="outlined"
           color="secondary"
         />
@@ -23,7 +23,7 @@ const SecondStepForm = () => {
       <div>
         <TextField
           margin="normal"
-          label="Contact info"
+          label="District"
           variant="outlined"
           color="secondary"
         />
