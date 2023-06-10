@@ -14,6 +14,10 @@ const ThirdStepForm = () => {
           label="County"
           variant="outlined"
           color="secondary"
+          value={userData["county"]}
+          onChange={(e) => {
+            setUserData({ ...userData, county: e.target.value });
+          }}
         />
       </div>
 
@@ -23,6 +27,10 @@ const ThirdStepForm = () => {
           label="Landmark"
           variant="outlined"
           color="secondary"
+          value={userData["landmark"]}
+          onChange={(e) => {
+            setUserData({ ...userData, landmark: e.target.value });
+          }}
         />
       </div>
       <div>
@@ -31,6 +39,10 @@ const ThirdStepForm = () => {
           label="Postal Code"
           variant="outlined"
           color="secondary"
+          value={userData["postalCode"]}
+          onChange={(e) => {
+            setUserData({ ...userData, postalCode: e.target.value });
+          }}
         />
       </div>
       <div>
