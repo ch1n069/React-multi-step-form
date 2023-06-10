@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, TextField } from "@mui/material";
-
+import { multiStepContext } from "../context/StepContext";
 const FirstStep = () => {
+  const { setStep, userData, setUserData } = useContext(multiStepContext);
+  const submitData = () => {
+    setStep(2);
+  };
   return (
     <div style={{}}>
       <div>
@@ -29,7 +33,7 @@ const FirstStep = () => {
           color="secondary"
         />
       </div>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" onClick={submitData}>
         Next
       </Button>
     </div>
