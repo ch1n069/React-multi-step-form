@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, TextField } from "@mui/material";
+import { multiStepContext } from "../context/StepContext";
 const SecondStepForm = () => {
+  const { setStep, userData, setUserData } = useContext(multiStepContext);
+  const submitData = () => {
+    setStep(3);
+  };
+  const backButton = () => {
+    setStep(1);
+  };
   return (
     <div style={{}}>
       <div>
@@ -28,9 +36,14 @@ const SecondStepForm = () => {
           color="secondary"
         />
       </div>
-      <Button variant="contained" color="secondary">
-        Next
-      </Button>
+      <div>
+        <Button variant="contained" color="secondary" onClick={backButton}>
+          Back
+        </Button>
+        <Button variant="contained" color="secondary" onClick={submitData}>
+          Next
+        </Button>
+      </div>
     </div>
   );
 };
