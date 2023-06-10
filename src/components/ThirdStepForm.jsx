@@ -37,6 +37,7 @@ const ThirdStepForm = () => {
         <Button variant="contained" color="secondary" onClick={backButton}>
           Back
         </Button>
+        <span> </span>
         <Button variant="contained" color="secondary">
           Next
         </Button>

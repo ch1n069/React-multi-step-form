@@ -40,6 +40,7 @@ const SecondStepForm = () => {
         <Button variant="contained" color="secondary" onClick={backButton}>
           Back
         </Button>
+        <span> </span>
         <Button variant="contained" color="secondary" onClick={submitData}>
           Next
         </Button>

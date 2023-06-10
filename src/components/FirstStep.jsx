@@ -14,6 +14,10 @@ const FirstStep = () => {
           label="First Name"
           variant="outlined"
           color="secondary"
+          value={userData["firstName"]}
+          onChange={(e) =>
+            setUserData({ ...userData, firstName: e.target.value })
+          }
         />
       </div>
 
