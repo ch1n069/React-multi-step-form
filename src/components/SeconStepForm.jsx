@@ -15,8 +15,11 @@ const SecondStepForm = () => {
         <TextField
           margin="normal"
           label="Email"
+          type="email"
           variant="outlined"
           color="secondary"
+          value={userData["email"]}
+          onChange={(e) => setUserData({ ...userData, email: e.target.value })}
         />
       </div>
 
@@ -26,6 +29,10 @@ const SecondStepForm = () => {
           label="Country"
           variant="outlined"
           color="secondary"
+          value={userData["country"]}
+          onChange={(e) => {
+            setUserData({ ...userData, country: e.target.value });
+          }}
         />
       </div>
       <div>
@@ -34,6 +41,10 @@ const SecondStepForm = () => {
           label="District"
           variant="outlined"
           color="secondary"
+          value={userData["district"]}
+          onchange={(e) => {
+            setUserData({ ...userData, district: e.target.value });
+          }}
         />
       </div>
       <div>
