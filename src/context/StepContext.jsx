@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-
+import App from "./App";
 export const multiStepContext = React.createContext();
 
 const StepContext = () => {
@@ -18,7 +18,9 @@ const StepContext = () => {
           finalData,
           setFinalData,
         }}
-      ></multiStepContext.Provider>
+      >
+        <App />
+      </multiStepContext.Provider>
     </div>
   );
 };
