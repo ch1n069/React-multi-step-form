@@ -42,3 +42,16 @@
 .read-the-docs {
   color: #f0e7e7;
 }
+
+.form {
+  border-width: 1px;
+  /* background-color: aqua; */
+  align-items: center;
+}
+
+.stepper {
+  align-items: center;
+  background-color: "green";
+  border-width: 1px solid "red";
+  margin-left: 30px;
+}

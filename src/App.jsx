@@ -26,22 +26,25 @@ function App() {
   };
   return (
     <>
-      <div className="App" style={{}}>
-        <Stepper
-          style={{ width: "18%" }}
-          activeStep={currentStep - 1}
-          orientation="horizontal"
-        >
-          <Step>
-            <StepLabel></StepLabel>
-          </Step>
-          <Step>
-            <StepLabel></StepLabel>
-          </Step>
-          <Step>
-            <StepLabel></StepLabel>
-          </Step>
-        </Stepper>
+      <div className="form" style={{}}>
+        <div className="stepper">
+          <Stepper
+            style={{ width: "18%" }}
+            activeStep={currentStep - 1}
+            orientation="horizontal"
+          >
+            <Step>
+              <StepLabel></StepLabel>
+            </Step>
+            <Step>
+              <StepLabel></StepLabel>
+            </Step>
+            <Step>
+              <StepLabel></StepLabel>
+            </Step>
+          </Stepper>
+        </div>
+
         {showStep(currentStep)}
       </div>
     </>

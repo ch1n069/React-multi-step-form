@@ -6,6 +6,32 @@ const ThirdStepForm = () => {
   const backButton = () => {
     setStep(2);
   };
+  const submitData = () => {
+    firstName: {
+      userData["firstName"];
+    }
+    secondName: {
+      userData["secondName"];
+    }
+    contact: {
+      userData["contact"];
+    }
+    email: {
+      userData["email"];
+    }
+    country: {
+      userData["country"];
+    }
+    district: {
+      userData["district"];
+    }
+    county: {
+      userData["county"];
+    }
+    landmark: {
+      userData["landmark"];
+    }
+  };
   return (
     <div style={{}}>
       <div>
@@ -51,7 +77,7 @@ const ThirdStepForm = () => {
         </Button>
         <span> </span>
         <Button variant="contained" color="secondary">
-          Next
+          Submit
         </Button>
       </div>
     </div>
