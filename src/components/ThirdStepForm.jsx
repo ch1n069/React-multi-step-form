@@ -31,6 +31,17 @@ const ThirdStepForm = () => {
     landmark: {
       userData["landmark"];
     }
+    console.log(
+      "submitting data",
+      userData["firstName"],
+      userData["secondName"],
+      userData["contact"],
+      userData["email"],
+      userData["country"],
+      userData["district"],
+      userData["county"]
+    );
+    alert("Data submitted successfully");
   };
   return (
     <div style={{}}>
@@ -76,7 +87,7 @@ const ThirdStepForm = () => {
           Back
         </Button>
         <span> </span>
-        <Button variant="contained" color="secondary">
+        <Button variant="contained" color="secondary" onClick={submitData}>
           Submit
         </Button>
       </div>
