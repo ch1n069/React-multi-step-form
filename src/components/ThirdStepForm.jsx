@@ -7,7 +7,15 @@ const ThirdStepForm = () => {
     setStep(2);
   };
   const submitData = () => {
-    alert("user data", userData);
+    // alert(JSON.stringify(userData).replace(/"/g, ""));
+    const firstname = userData["firstname"];
+    const lastname = userData["secondname"];
+    const contact = userData["contact"];
+    const email = userData["email"];
+    const district = userData["district"];
+    const country = userData["country"];
+    const county = userData["county"];
+    alert(firstname + lastname + contact + email + district + country + county);
     console.log(userData);
   };
   return (
