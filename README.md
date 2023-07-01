@@ -11,4 +11,9 @@ manage the state of the form as a user fills the form on every step
 2. Navigate to the project directory
 3. Install all the dependencies using the following command 'npm install'
 
--
+## Usage
+
+To run the project follow this steps
+
+1.  npm run dev
+2.  Open your localhost and viola
