@@ -42,7 +42,7 @@ const SecondStepForm = () => {
           variant="outlined"
           color="secondary"
           value={userData["district"]}
-          onchange={(e) => {
+          onChange={(e) => {
             setUserData({ ...userData, district: e.target.value });
           }}
         />

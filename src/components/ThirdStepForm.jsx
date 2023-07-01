@@ -7,41 +7,8 @@ const ThirdStepForm = () => {
     setStep(2);
   };
   const submitData = () => {
-    firstName: {
-      userData["firstName"];
-    }
-    secondName: {
-      userData["secondName"];
-    }
-    contact: {
-      userData["contact"];
-    }
-    email: {
-      userData["email"];
-    }
-    country: {
-      userData["country"];
-    }
-    district: {
-      userData["district"];
-    }
-    county: {
-      userData["county"];
-    }
-    landmark: {
-      userData["landmark"];
-    }
-    console.log(
-      "submitting data",
-      userData["firstName"],
-      userData["secondName"],
-      userData["contact"],
-      userData["email"],
-      userData["country"],
-      userData["district"],
-      userData["county"]
-    );
-    alert("Data submitted successfully");
+    alert("user data", userData);
+    console.log(userData);
   };
   return (
     <div style={{}}>
