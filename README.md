@@ -18,6 +18,9 @@ To run the project follow this steps
 1.  npm run dev
 2.  Open your localhost and viola
 
+
+## license
+
 Copyright (c) 2023 Bruno Gatiba
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
